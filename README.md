@@ -31,3 +31,8 @@ if successfull, you will see some base folder
 ![Screenshot](picture.png)
 
 ### Happy Working with Go, Coders!!
+
+```
+NOTE
+referensi project clean code architecture from uncle bob architecture
+```
