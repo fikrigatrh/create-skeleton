@@ -7,10 +7,10 @@ import (
 
 func CreateTon(name string) {
 	if name == "create_ton" {
-		_, err := os.Stat("repo/repo.go")
+		_, err := os.Stat("repo")
 
 		if os.IsNotExist(err) {
-			errDir := os.MkdirAll("repo/repo.go", 0755)
+			errDir := os.MkdirAll("repo", 0755)
 			if errDir != nil {
 				log.Fatal(err)
 			}
