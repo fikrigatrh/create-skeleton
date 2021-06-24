@@ -20,13 +20,13 @@ import (
 
 # Usage
 
-Call function with param ***create_ton***
+Call function with param ***create_ton*** in file main.go
 
 ```
 gtr_skeleton.CreateTon("create_ton")
 ```
 
-if successfull, you will see some base folder
+next, type ***go run main.go*** in your terminal/cmd, if successfull, you will see some base folder
 
 ![Screenshot](picture.png)
 
