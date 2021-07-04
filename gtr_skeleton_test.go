@@ -13,7 +13,10 @@ func TestMkdir(t *testing.T) {
 	if os.IsNotExist(err) {
 		t.Error("unable to find directory")
 	} else {
-		os.RemoveAll("lorem")
+		err := os.RemoveAll("lorem")
+		if err != nil {
+			return 
+		}
 	}
 }
 
@@ -37,7 +40,10 @@ func TestCreateTon(t *testing.T) {
 		if os.IsNotExist(err) {
 			t.Error("unable to find directory", dir)
 		} else {
-			os.RemoveAll(dir)
+			err := os.RemoveAll(dir)
+			if err != nil {
+				return 
+			}
 		}
 	}
 }
